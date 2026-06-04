@@ -1,0 +1,12 @@
+{
+	"name": "WeNdKa-Py-Tweaks",
+	"version": "0.1.0",
+	"factorio_version": "2.0",
+	"title": "PyTweaks",
+	"author": "WeNdKa",
+	"description": "Some tweaks to help py scale for higher spm goals",
+	"dependencies": [
+	"base >= 2.0",
+	"pyalternativeenergy >= 3.1.34"
+	]
+}
