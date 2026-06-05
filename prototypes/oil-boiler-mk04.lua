@@ -4,11 +4,19 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lab",                   amount = 1},
-        {type = "item", name = "iron-plate",            amount = 100},
-        {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "gasifier",              amount = 1},
-        {type = "item", name = "small-parts-01",        amount = 20},
+        {type = "item", name = "oil-boiler-mk03",                  amount = 1},
+        {type = "item", name = "ht-pipes",                          amount = 25},
+        {type = "item", name = "mechanical-parts-04",            amount = 2},
+        {type = "item", name = "nxzngd",                           amount = 10},
+        {type = "item", name = "sc-engine",                        amount = 5},
+        {type = "item", name = "intelligent-unit",                 amount = 5},
+        {type = "item", name = "small-parts-03",                   amount = 30},
+        {type = "item", name = "super-alloy",                      amount = 30},
+        {type = "item", name = "metastable-quasicrystal",          amount = 5},
+        {type = "item", name = "science-coating",                  amount = 5},
+        {type = "item", name = "wall-shield",                      amount = 10},
+        {type = "item", name = "nbfe-alloy",                       amount = 20},
+        {type = "item", name = "low-density-structure",            amount = 35}
     },
     results = {
         {type = "item", name = "oil-boiler-mk04", amount = 1}
@@ -20,6 +28,7 @@ ITEM {
     name = "oil-boiler-mk04",
     icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
+    tint = py.tints[4],
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
     order = "b",
@@ -74,6 +83,7 @@ ENTITY {
         production_type = "output",
         filter = "steam"
     },
+    fast_replaceable_group = "oil-boiler",
     energy_consumption = "473.76MW",
     energy_source = {
         type = "fluid",

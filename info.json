@@ -7,6 +7,7 @@
 	"description": "Some tweaks to help py scale for higher spm goals",
 	"dependencies": [
 	"base >= 2.0",
-	"pyalternativeenergy >= 3.1.34"
+	"pyalternativeenergy >= 3.1.34",
+	"pypostprocessing"
 	]
 }

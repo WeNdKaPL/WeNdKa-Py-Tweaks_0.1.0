@@ -4,11 +4,16 @@ RECIPE {
     energy_required = 2,
     enabled = false,
     ingredients = {
-        {type = "item", name = "lab",                   amount = 1},
-        {type = "item", name = "iron-plate",            amount = 100},
-        {type = "item", name = "electric-mining-drill", amount = 3},
-        {type = "item", name = "gasifier",              amount = 1},
-        {type = "item", name = "small-parts-01",        amount = 20},
+        {type = "item", name = "oil-boiler-mk01",               amount = 1},
+        {type = "item", name = "pipe",                          amount = 15},
+        {type = "item", name = "mechanical-parts-02",         amount = 1},
+        {type = "item", name = "self-assembly-monolayer",       amount = 5},
+        {type = "item", name = "engine-unit",                   amount = 10},
+        {type = "item", name = "advanced-circuit",              amount = 5},
+        {type = "item", name = "small-parts-02",                amount = 20},
+        {type = "item", name = "steel-plate",                   amount = 40},
+        {type = "item", name = "titanium-plate",                amount = 50},
+        {type = "item", name = "stainless-steel",               amount = 30},
     },
     results = {
         {type = "item", name = "oil-boiler-mk02", amount = 1}
@@ -18,8 +23,9 @@ RECIPE {
 ITEM {
     type = "item",
     name = "oil-boiler-mk02",
-    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk02.png",
+    icon = "__pypetroleumhandlinggraphics__/graphics/icons/oil-burner-mk01.png",
     icon_size = 32,
+    tint = py.tints[2],
     flags = {},
     subgroup = "py-petroleum-handling-buildings-extras",
     order = "b",
@@ -74,6 +80,7 @@ ENTITY {
         production_type = "output",
         filter = "steam"
     },
+    fast_replaceable_group = "oil-boiler",
     energy_consumption = "118.44MW",
     energy_source = {
         type = "fluid",

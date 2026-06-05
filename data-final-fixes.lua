@@ -1,0 +1,1 @@
+data.raw["boiler"]["oil-boiler-mk01"].fast_replaceable_group = "oil-boiler"
